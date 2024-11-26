@@ -71,7 +71,7 @@ p {
 	color: crimson;
 }
 
-/* Header section */
+/* Seção do Header */
 #header {
 	position: fixed;
 	z-index: 1000;
@@ -196,9 +196,9 @@ p {
 #header .hamburger.active .bar::after {
 	top: 0;
 }
-/* End Header section */
+/* Fim da Seção do Header */
 
-/* Hero Section */
+/* Seção do Hero */
 #hero {
 	background-image: url(./img/hero-bg.png);
 	background-size: cover;
@@ -262,9 +262,9 @@ p {
 	animation-delay: 2.5s;
 }
 
-/* End Hero Section */
+/* Fim da Seção do Hero */
 
-/* About Section */
+/* Seção Sobre */
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
@@ -312,9 +312,9 @@ p {
 	border: 7px solid crimson;
 	z-index: -1;
 }
-/* End About Section */
+/* Fim da Seção Sobre */
 
-/* Services Section */
+/* Seção de Serviços */
 #services .services {
 	flex-direction: column;
 	text-align: center;
@@ -376,9 +376,9 @@ p {
 	color: white;
 	text-align: left;
 }
-/* End Services Section */
+/* Fim da Seção Serviços */
 
-/* Projects section */
+/* Seção de Pagamentos */
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
@@ -449,8 +449,9 @@ p {
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
-/* End Projects section */
+/* Fim da Seção de Pagamentos */
 
+/* Seção de Depoimentos */
 #testimonials {
     max-width: 1200px;
     margin: 0 auto;
@@ -571,9 +572,9 @@ p {
 #testimonials::-webkit-scrollbar-track {
     background: #29323c;
 }
+/*Fim da Seção de Depoimentos*/
 
-
-/* contact Section */
+/* Seção Contatos */
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -581,7 +582,6 @@ p {
 	width: 90%;
 }
 #contact .contact-items {
-	/* max-width: 400px; */
 	width: 100%;
 }
 #contact .contact-item {
@@ -616,9 +616,9 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
-/*End contact Section */
+/* Fim da Seção de Contatos */
 
-/* Footer */
+/* Rodapé */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
@@ -656,9 +656,9 @@ p {
 	color: white;
 	font-size: 1.3rem;
 }
-/* End Footer */
+/* Fim do Rodapé */
 
-/* Keyframes */
+/* Animações */
 @keyframes hamburger_puls {
 	0% {
 		opacity: 1;
@@ -690,9 +690,9 @@ p {
 		font-weight: 500;
 	}
 }
-/* End Keyframes */
+/* Fim das Animações */
 
-/* Media Query For Tablet */
+/* Ajuste para telas menores */
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
@@ -702,20 +702,15 @@ p {
 		font-size: 6rem;
 	}
 
-	/* Hero */
 	#hero h1 {
 		font-size: 7rem;
 	}
-	/* End Hero */
 
-	/* Services Section */
 	#services .service-bottom .service-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	/* End Services Section */
 
-	/* Project */
 	#projects .project-item {
 		flex-direction: row;
 	}
@@ -734,9 +729,7 @@ p {
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
-	/* End Project */
 
-	/* About */
 	#about .about {
 		flex-direction: row;
 	}
@@ -759,9 +752,7 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
-	/* End About */
 
-	/* contact  */
 	#contact .contact {
 		flex-direction: column;
 		padding: 100px 0;
@@ -793,13 +784,11 @@ p {
 		text-align: left;
 		padding-left: 20px;
 	}
-	/* End contact  */
 }
-/* End Media Query For Tablet */
+/* Fim do Ajuste para telas menores*/
 
-/* Media Query For Desktop */
+/* Ajustes para Desktop */
 @media only screen and (min-width: 1200px) {
-	/* header */
 	#header .hamburger {
 		display: none;
 	}
@@ -819,11 +808,10 @@ p {
 	#header .nav-list ul a:after {
 		display: none;
 	}
-	/* End header */
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
 }
-/* End  Media Query For Desktop */
+/* Fim do Ajuste para Desktop */
