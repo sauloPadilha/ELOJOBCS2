@@ -23,3 +23,36 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
+// Exibe o pop-up ao carregar o site
+window.onload = function () {
+    const popup = document.getElementById("popup");
+    const acceptCookies = document.getElementById("accept-cookies");
+    const declineCookies = document.getElementById("decline-cookies");
+    const enableNotifications = document.getElementById("enable-notifications");
+
+    // Mostra o popup
+    popup.classList.add("active");
+
+    // Ações para aceitar cookies
+    acceptCookies.addEventListener("click", function () {
+        localStorage.setItem("cookiesAccepted", "true");
+        if (enableNotifications.checked) {
+            console.log("Notificações ativadas.");
+            // Ative notificações via Push API ou outro método aqui.
+        }
+        popup.classList.remove("active");
+    });
+
+    // Ações para recusar cookies
+    declineCookies.addEventListener("click", function () {
+        console.log("Cookies recusados.");
+        popup.classList.remove("active");
+    });
+
+    // Verifica se os cookies já foram aceitos
+    if (localStorage.getItem("cookiesAccepted") === "true") {
+        popup.classList.remove("active");
+    }
+};
+
