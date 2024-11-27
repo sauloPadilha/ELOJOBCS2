@@ -261,7 +261,6 @@ p {
 #hero h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
-
 /* Fim da Seção do Hero */
 
 /* Seção Sobre */
@@ -380,75 +379,134 @@ p {
 
 /* Seção de Pagamentos */
 #projects .projects {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 0;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
 }
+
 #projects .projects-header h1 {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
+
 #projects .all-projects {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas arredondadas */
+
 }
+
 #projects .project-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 80%;
-	margin: 20px auto;
-	overflow: hidden;
-	border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
 }
+
 #projects .project-info {
-	padding: 30px;
-	flex-basis: 50%;
-	height: 100%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
 }
+
 #projects .project-info h1 {
-	font-size: 4rem;
-	font-weight: 500;
+    font-size: 4rem;
+    font-weight: 500;
 }
+
 #projects .project-info h2 {
-	font-size: 1.8rem;
-	font-weight: 500;
-	margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
 }
+
 #projects .project-info p {
-	color: white;
+    color: white;
 }
+
+#projects .pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+	border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+
+#projects .pricing-table thead {
+    background-color: #3b4654;
+}
+
+#projects .pricing-table thead th {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 15px;
+    color: crimson;
+    border-bottom: 2px solid #485563;
+}
+
+#projects .pricing-table tbody tr {
+    background-color: #2f3947;
+}
+
+#projects .pricing-table tbody tr:hover {
+    background-color: #394251;
+}
+
+#projects .pricing-table tbody td {
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    color: #e0e0e0;
+    text-align: left;
+    border-bottom: 1px solid #485563;
+}
+
+#projects .pricing-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
 #projects .project-img {
-	flex-basis: 50%;
-	height: 300px;
-	overflow: hidden;
-	position: relative;
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 }
+
 #projects .project-img:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.7;
 }
+
 #projects .project-img img {
-	transition: 0.3s ease transform;
+    transition: 0.3s ease transform;
 }
+
 #projects .project-item:hover .project-img img {
-	transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 /* Fim da Seção de Pagamentos */
 
 /* Seção de Depoimentos */
@@ -495,12 +553,12 @@ p {
 
 #testimonials .testimonial-title span {
     color: crimson;
-    font-weight: 70;
+    font-weight: 100;
 }
 
 #testimonials .testimonial-container {
     display: flex;
-    gap: 40px;
+    gap: 10px;
     animation: scrollHorizontal 170s linear infinite;
     padding: 40px;
 }
@@ -520,7 +578,7 @@ p {
     background: linear-gradient(60deg, #29323c 0%, #485563 100%);
     border-radius: 4px;
     padding: 10px 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.2rem;
     text-align: left;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
@@ -534,11 +592,11 @@ p {
 
 #testimonials blockquote p {
     font-size: 1.7rem;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 2;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 	color: aliceblue;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 #testimonials blockquote cite {
@@ -571,6 +629,25 @@ p {
 
 #testimonials::-webkit-scrollbar-track {
     background: #29323c;
+}
+#testimonials h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: crimson;
+    letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.6rem;
+}
+
+#testimonials h4 {
+	font-size: 1.9rem;
+	margin-bottom: 20px;
+	text-align: justify;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-weight: 100;
 }
 /*Fim da Seção de Depoimentos*/
 
