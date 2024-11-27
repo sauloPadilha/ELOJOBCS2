@@ -394,10 +394,9 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-	border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
-    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas arredondadas */
-
+	border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 #projects .project-item {
@@ -424,7 +423,7 @@ p {
 }
 
 #projects .project-info h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
@@ -733,6 +732,35 @@ p {
 	color: white;
 	font-size: 1.3rem;
 }
+
+.discord-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #5865f2; /* Cor padrão do Discord */
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discord-button img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.discord-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+
 /* Fim do Rodapé */
 
 /* Animações */
