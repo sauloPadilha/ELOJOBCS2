@@ -1,0 +1,48 @@
+
+### Documentação do HTML
+
+#### 1. Cabeçalho (Header)
+- <!-- HEADER -->
+  - Contém a **logo da marca** e a **barra de navegação**.
+  - Inclui links para rolagem direta às principais seções da página.
+  - Adiciona um **menu "hamburger"** para melhor usabilidade em dispositivos móveis.
+
+#### 2. Seção Hero (Hero Section)
+- <!-- HERO SECTION -->
+  - Exibe uma mensagem de boas-vindas e destaca o objetivo principal do site.
+  - Contém um **botão de chamada à ação (CTA)** que leva os usuários para os preços.
+
+#### 3. Seção Sobre Nós (About Section)
+- <!-- ABOUT SECTION -->
+  - Apresenta a **história e credibilidade** da equipe, destacando as conquistas no cenário competitivo.
+  - Inclui uma imagem ilustrativa e um texto detalhado sobre os valores e a abordagem profissional.
+
+#### 4. Seção de Serviços (Service Section)
+- <!-- SERVICES SECTION -->
+  - Lista os serviços oferecidos, como **Premier, GamersClub, Coaching e Duo Elojob**.
+  - Usa **descrições detalhadas** para destacar os benefícios de cada modalidade.
+  - Inclui **ícones e imagens de fundo** que enriquecem a apresentação visual.
+
+#### 5. Seção de Preços (Projects Section)
+- <!-- PROJECTS SECTION -->
+  - Apresenta as **tabelas de preços**, segmentadas por modalidade (Competitivo Especial e GamersClub).
+  - Oferece detalhes claros sobre os preços para diferentes faixas de níveis.
+  - Exibe um **aviso sobre possíveis alterações nos preços** para transparência.
+
+#### 6. Seção de Depoimentos (Testimonials Section)
+- <!-- TESTIMONIALS SECTION -->
+  - Mostra **citações de clientes satisfeitos**, destacando a confiança e o impacto dos serviços.
+  - Reforça o compromisso com a satisfação dos clientes por meio de depoimentos reais.
+  - Contém um texto enfatizando a importância da **opinião dos clientes** na operação do serviço.
+
+#### 7. Rodapé (Footer)
+- <!-- FOOTER -->
+  - Encera a página com informações adicionais e links para redes sociais.
+  - Contém informações de **copyright** e links para as redes sociais do projeto, como Instagram, TikTok, YouTube e Discord.
+  - Inclui um botão para acesso direto ao servidor Discord.
+
+### Diferenciais Técnicos
+- <!-- TECHNICAL FEATURES -->
+  - O layout é totalmente **responsivo**, garantindo ótima experiência em dispositivos móveis.
+  - **Estética moderna** com uso estratégico de imagens, ícones e cores atraentes.
+  - Navegação intuitiva com links ancorados, proporcionando acesso rápido ao conteúdo.

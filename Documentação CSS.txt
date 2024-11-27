@@ -1,0 +1,107 @@
+
+### Documentação CSS
+
+#### 1. Esquema de Cores
+O CSS utiliza um esquema de cores que combina tons de cinza escuro, branco, e um vermelho intenso (crimson) como cor de destaque. 
+A escolha de cores cria um contraste moderno e elegante, garantindo legibilidade e impacto visual.
+
+**Cores Utilizadas:**
+- `#29323c` e `#485563`: Tons de cinza/azul escuro, utilizados como plano de fundo para criar profundidade.
+- `#f0f0f0`: Tons claros para detalhes textuais em hover ou áreas secundárias.
+- `crimson` (`#dc143c`): Cor de destaque utilizada em textos, bordas, botões e elementos interativos.
+- `white` (`#ffffff`): Para textos principais e contrastes visuais.
+
+---
+
+#### 2. Estrutura do Arquivo CSS
+
+##### a. Resets e Estilos Gerais
+- **Função**: Define estilos básicos para padronizar margens, fontes e tamanhos.
+- **Elementos Configurados**:
+  - Reset de margens e espaçamentos (`padding`, `margin`).
+  - Fontes globais (`Montserrat` via Google Fonts).
+  - Configuração para rolagem suave (`scroll-behavior`).
+  - Configurações gerais para links, parágrafos, imagens e containers.
+
+##### b. Botões e Chamadas à Ação (CTA)
+- **Função**: Define estilos para botões interativos e chamadas à ação.
+- **Destaques**:
+  - Botões têm bordas em `crimson` e fundo transparente, com transição suave ao passar o cursor.
+
+---
+
+#### 3. Estilos por Seção
+
+##### a. Cabeçalho (Header)
+- **Função**: Estiliza o cabeçalho fixo e a navegação.
+- **Destaques**:
+  - Barra de navegação responsiva com menu "hamburger".
+  - Links interativos que mudam de cor para `crimson` no hover.
+  - Fundo translúcido para realçar o conteúdo.
+
+##### b. Hero (Seção de Destaque)
+- **Função**: Cria uma introdução visualmente impactante para a página.
+- **Destaques**:
+  - Plano de fundo com imagem (`hero-bg.png`) e sobreposição escura para contraste.
+  - Animações para revelar textos com efeitos de destaque em `crimson`.
+
+##### c. Sobre Nós (About Section)
+- **Função**: Apresenta informações sobre o serviço em um layout limpo e alinhado.
+- **Destaques**:
+  - Texto alinhado ao centro ou à esquerda dependendo do tamanho da tela.
+  - Imagem com bordas destacadas em branco e um contorno adicional em `crimson`.
+
+##### d. Serviços (Services Section)
+- **Função**: Lista serviços de forma organizada e visualmente atraente.
+- **Destaques**:
+  - Itens de serviço com imagens de fundo e sobreposição em gradiente.
+  - Transições suaves para escala e sombras nos itens ao passar o cursor.
+  - Ícones rotativos para maior interação.
+
+##### e. Preços (Projects Section)
+- **Função**: Apresenta preços organizados em tabelas.
+- **Destaques**:
+  - Tabelas com cabeçalhos em `crimson` para maior contraste.
+  - Sombras sutis e gradientes para destacar cada item.
+  - Efeito de zoom em imagens ao passar o cursor.
+
+##### f. Depoimentos (Testimonials Section)
+- **Função**: Exibe feedbacks de clientes em formato de blocos animados.
+- **Destaques**:
+  - Animação contínua horizontal para deslocamento de depoimentos.
+  - Blocos com sombra, bordas arredondadas e cores de fundo em gradiente.
+  - Textos principais em branco com sombras para melhor legibilidade.
+
+##### g. Contatos (Contact Section)
+- **Função**: Exibe informações de contato em blocos individuais.
+- **Destaques**:
+  - Blocos com sombreamento sutil e transições suaves no hover.
+  - Ícones grandes e bem visíveis para facilitar a identificação.
+
+##### h. Rodapé (Footer)
+- **Função**: Finaliza a página com informações adicionais e links sociais.
+- **Destaques**:
+  - Gradiente de fundo em cinza escuro.
+  - Ícones de redes sociais em escala de cinza, ganhando cores no hover.
+
+---
+
+#### 4. Responsividade
+O CSS inclui media queries para adaptar o layout a diferentes dispositivos:
+- **Dispositivos menores que 768px**:
+  - Botões e textos redimensionados para melhor legibilidade.
+  - Elementos de layout ajustados para alinhamento vertical.
+- **Dispositivos maiores que 1200px**:
+  - Navegação horizontal em substituição ao menu "hamburger".
+  - Tabelas e seções reorganizadas para maior uso do espaço.
+
+---
+
+#### 5. Animações
+O CSS utiliza animações para tornar a experiência mais interativa:
+- **Texto no Hero**:
+  - Animação de revelação com caixas coloridas (`text_reveal` e `text_reveal_box`).
+- **Itens de Serviço**:
+  - Transições para escala e sombreamento no hover.
+- **Depoimentos**:
+  - Animação contínua para rolagem horizontal de citações.
