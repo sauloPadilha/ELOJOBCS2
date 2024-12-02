@@ -52,6 +52,12 @@ let desiredPoints = null;
 let currentLevel = null;
 let desiredLevel = null;
 
+function showPlaceOrderButton(orderLink, buttonId) {
+    const placeOrderButton = document.getElementById(buttonId);
+    placeOrderButton.href = orderLink;
+    placeOrderButton.style.display = "inline-block";
+}
+
 document.querySelectorAll("#currentPoints img").forEach((img) => {
     img.addEventListener("click", () => {
         document.querySelectorAll("#currentPoints img").forEach((img) => img.classList.remove("selected"));
@@ -92,6 +98,7 @@ function calculateCE() {
     if (currentPoints === null || desiredPoints === null) return;
     if (currentPoints >= desiredPoints) {
         document.getElementById("resultCE").textContent = "Os pontos desejados devem ser maiores que os pontos atuais.";
+        document.getElementById("placeOrderCE").style.display = "none";
         return;
     }
 
@@ -101,7 +108,7 @@ function calculateCE() {
         { max: 14999, price: 50 },
         { max: 19999, price: 65 },
         { max: 24999, price: 90 },
-		{ max: 25000, price: 120 },
+        { max: 25000, price: 120 },
     ];
 
     let totalPrice = 0;
@@ -110,16 +117,23 @@ function calculateCE() {
         totalPrice += range ? range.price : 0;
     }
 
-    document.getElementById("resultCE").textContent = `Valor total: R$${totalPrice.toLocaleString("pt-BR", {
+    const formattedPrice = totalPrice.toLocaleString("pt-BR", {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2,
-    })}`;
+    });
+
+    document.getElementById("resultCE").textContent = `Valor total: R$${formattedPrice}`;
+
+	const orderLink = `https://api.whatsapp.com/send?phone=5511960203264&text=Ol%C3%A1,%20estou%20entrando%20em%20contato%20para%20solicitar%20o%20servi%C3%A7o%20de%20BOOST%20na%20minha%20conta.%20Atualmente,%20estou%20com%20${currentPoints}%20pontos%20e%20desejo%20alcan%C3%A7ar%20${desiredPoints}%20pontos.%20O%20valor%20total%20do%20servi%C3%A7o%20%C3%A9%20de%20R$${formattedPrice}.%20Aguardo%20mais%20informa%C3%A7%C3%B5es%20e%20instru%C3%A7%C3%B5es%20para%20prosseguir.%20Obrigado!`;
+
+    showPlaceOrderButton(orderLink, "placeOrderCE");
 }
 
 function calculateGC() {
     if (currentLevel === null || desiredLevel === null) return;
     if (currentLevel >= desiredLevel) {
         document.getElementById("resultGC").textContent = "O nível desejado deve ser maior que o nível atual.";
+        document.getElementById("placeOrderGC").style.display = "none";
         return;
     }
 
@@ -132,10 +146,16 @@ function calculateGC() {
         else totalPrice += 130;
     }
 
-    document.getElementById("resultGC").textContent = `Valor total: R$${totalPrice.toLocaleString("pt-BR", {
+    const formattedPrice = totalPrice.toLocaleString("pt-BR", {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2,
-    })}`;
+    });
+
+    document.getElementById("resultGC").textContent = `Valor total: R$${formattedPrice}`;
+
+	const orderLink = `https://api.whatsapp.com/send?phone=5511960203264&text=Ol%C3%A1,%20estou%20entrando%20em%20contato%20para%20solicitar%20o%20servi%C3%A7o%20de%20BOOST%20para%20minha%20conta.%20Atualmente,%20estou%20no%20Level%20${currentLevel}%20e%20desejo%20alcan%C3%A7ar%20o%20Level%20${desiredLevel}.%20O%20valor%20total%20do%20servi%C3%A7o%20%C3%A9%20de%20R$${formattedPrice}.%20Aguardo%20mais%20informa%C3%A7%C3%B5es%20e%20instru%C3%A7%C3%B5es%20para%20prosseguir.%20Obrigado!`;
+
+    showPlaceOrderButton(orderLink, "placeOrderGC");
 }
 
 function resetModal() {
@@ -148,6 +168,9 @@ function resetModal() {
 
     document.getElementById("resultCE").textContent = "";
     document.getElementById("resultGC").textContent = "";
+
+    document.getElementById("placeOrderCE").style.display = "none";
+    document.getElementById("placeOrderGC").style.display = "none";
 }
 
 const modal = document.getElementById("calculationModal");
