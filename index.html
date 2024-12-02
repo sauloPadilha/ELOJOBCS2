@@ -141,6 +141,8 @@
             <h1 class="section-title">Projetos <span>& </span>Valores</h1>
         </div>
         <div class="all-projects">
+
+            <!-- Competitivo Especial -->
             <div class="project-item">
                 <div class="project-info">
                     <h1>COMPETITIVO ESPECIAL</h1>
@@ -179,12 +181,14 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p>*Valores sujeitos a alteração*</p>
+                    <button class="btn open-modal" data-modal="competitivo">Calcular Valores</button>
                 </div>
                 <div class="project-img">
                     <img src="./img/premier-bg-price.png" alt="img">
                 </div>
             </div>
+
+            <!-- GamersClub -->
             <div class="project-item">
                 <div class="project-info">
                     <h1>GAMERSCLUB</h1>
@@ -223,7 +227,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p>*Valores sujeitos a alteração*</p>
+                    <button class="btn open-modal" data-modal="gamersclub">Calcular Valores</button>
                 </div>
                 <div class="project-img">
                     <img src="./img/gc-bg-price.png" alt="img">
@@ -231,7 +235,99 @@
             </div>
         </div>
     </div>
-  </section>
+</section>
+
+<!-- Modal -->
+<div id="calculationModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Calcule os Valores</h2>
+
+        <!-- Competitivo Especial -->
+        <div id="competitivo-section" class="calculation-section" style="display: none;">
+            <h3>Selecione os pontos atuais e os pontos desejados:</h3>
+
+            <div class="level-selection">
+                <h4>Pontos Atuais:</h4>
+                <div class="levels" id="currentPoints">
+                    <!-- Adicionar imagens de pontos (1.000 a 30.000) -->
+                    <img src="./img/points1000.png" data-points="1000" alt="1.000 Pontos">
+                    <img src="./img/points2000.png" data-points="2000" alt="2.000 Pontos">
+                    <!-- Continue até 30.000 -->
+                </div>
+            </div>
+
+            <div class="level-selection">
+                <h4>Pontos Desejados:</h4>
+                <div class="levels" id="desiredPoints">
+                    <!-- Adicionar imagens de pontos (1.000 a 30.000) -->
+                    <img src="./img/points1000.png" data-points="1000" alt="1.000 Pontos">
+                    <img src="./img/points2000.png" data-points="2000" alt="2.000 Pontos">
+                    <!-- Continue até 30.000 -->
+                </div>
+            </div>
+
+            <p id="resultCE"></p>
+        </div>
+
+        <div id="gamersclub-section" class="calculation-section" style="display: none;">
+            <h3>Selecione o nível atual e o nível desejado:</h3>
+
+            <div class="level-selection">
+                <h4>Nível Atual:</h4>
+                <div class="levels" id="currentLevels">
+                    <img src="img/gc-levels/lv1.png" data-level="1" alt="Level 1">
+                    <img src="img/gc-levels/lv2.png" data-level="2" alt="Level 2">
+                    <img src="img/gc-levels/lv3.png" data-level="3" alt="Level 3">
+                    <img src="img/gc-levels/lv4.png" data-level="4" alt="Level 4">
+                    <img src="img/gc-levels/lv5.png" data-level="5" alt="Level 5">
+                    <img src="img/gc-levels/lv6.png" data-level="6" alt="Level 6">
+                    <img src="img/gc-levels/lv7.png" data-level="7" alt="Level 7">
+                    <img src="img/gc-levels/lv8.png" data-level="8" alt="Level 8">
+                    <img src="img/gc-levels/lv9.png" data-level="9" alt="Level 9">
+                    <img src="img/gc-levels/lv10.png" data-level="10" alt="Level 10">
+                    <img src="img/gc-levels/lv11.png" data-level="11" alt="Level 11">
+                    <img src="img/gc-levels/lv12.png" data-level="12" alt="Level 12">
+                    <img src="img/gc-levels/lv13.png" data-level="13" alt="Level 13">
+                    <img src="img/gc-levels/lv14.png" data-level="14" alt="Level 14">
+                    <img src="img/gc-levels/lv15.png" data-level="15" alt="Level 15">
+                    <img src="img/gc-levels/lv16.png" data-level="16" alt="Level 16">
+                    <img src="img/gc-levels/lv17.png" data-level="17" alt="Level 17">
+                    <img src="img/gc-levels/lv18.png" data-level="18" alt="Level 18">
+                    <img src="img/gc-levels/lv19.png" data-level="19" alt="Level 19">
+                </div>
+            </div>
+
+            <div class="level-selection">
+                <h4>Nível Desejado:</h4>
+                <div class="levels" id="desiredLevels">
+                    <img src="img/gc-levels/lv2.png" data-level="2" alt="Level 2">
+                    <img src="img/gc-levels/lv3.png" data-level="3" alt="Level 3">
+                    <img src="img/gc-levels/lv4.png" data-level="4" alt="Level 4">
+                    <img src="img/gc-levels/lv5.png" data-level="5" alt="Level 5">
+                    <img src="img/gc-levels/lv6.png" data-level="6" alt="Level 6">
+                    <img src="img/gc-levels/lv7.png" data-level="7" alt="Level 7">
+                    <img src="img/gc-levels/lv8.png" data-level="8" alt="Level 8">
+                    <img src="img/gc-levels/lv9.png" data-level="9" alt="Level 9">
+                    <img src="img/gc-levels/lv10.png" data-level="10" alt="Level 10">
+                    <img src="img/gc-levels/lv11.png" data-level="11" alt="Level 11">
+                    <img src="img/gc-levels/lv12.png" data-level="12" alt="Level 12">
+                    <img src="img/gc-levels/lv13.png" data-level="13" alt="Level 13">
+                    <img src="img/gc-levels/lv14.png" data-level="14" alt="Level 14">
+                    <img src="img/gc-levels/lv15.png" data-level="15" alt="Level 15">
+                    <img src="img/gc-levels/lv16.png" data-level="16" alt="Level 16">
+                    <img src="img/gc-levels/lv17.png" data-level="17" alt="Level 17">
+                    <img src="img/gc-levels/lv18.png" data-level="18" alt="Level 18">
+                    <img src="img/gc-levels/lv19.png" data-level="19" alt="Level 19">
+                    <img src="img/gc-levels/lv20.png" data-level="20" alt="Level 20">
+                </div>
+                </div>
+            </div>
+
+            <p id="resultGC"></p>
+        </div>
+    </div>
+</div>
   <!-- Fim da Seção de Projetos e Preços -->
 
   <!-- Seção de Depoimentos -->
