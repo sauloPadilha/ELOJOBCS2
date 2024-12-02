@@ -592,6 +592,7 @@ p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin: 10px auto 0;
     position: relative;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .open-modal:hover {
@@ -632,6 +633,9 @@ p {
     align-items: flex-start;
     overflow-y: auto;
     padding-top: 15px;
+    font-family: 'Montserrat', sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 .modal-content {
@@ -645,6 +649,7 @@ p {
     text-align: center;
     position: relative;
     margin: auto;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .modal .close {
@@ -817,6 +822,7 @@ p {
         font-size: 2rem;
     }
 }
+
 /* Fim da Seção de Pagamentos */
 
 /* Seção de Depoimentos */
