@@ -10,6 +10,11 @@
 </head>
 
 <body>
+
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
   <!-- Cabeçalho -->
   <section id="header">
     <div class="header container">
@@ -49,39 +54,6 @@
     </div>
   </section>
   <!-- Fim da Seção Hero  -->
-
-  <!-- Seção Sobre -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/us-img.png" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">SOBRE <span>NÓS</span></h1>
-        <h2>Especialistas em Performance Competitiva de Counter-Strike 2</h2>
-        <p>Com uma sólida trajetória no cenário de Counter-Strike, reunimos 
-          anos de experiência competindo nos mais altos níveis. Nossa equipe é 
-          formada por jogadores com conta nível 21 na GamersClub, nível 10 na 
-          FACEIT e entre os Top 80 do Brasil. Além disso, contamos com contas que 
-          possuem 26 mil pontos no Competitivo Especial, marcos que refletem nosso 
-          desempenho consistente e dedicação ao jogo. Nossa trajetória inclui participações 
-          na Liga PRO e na exclusiva FPL (FACEIT Pro League), um ambiente reservado 
-          para os melhores profissionais do mundo. Nossa abordagem vai além do básico. 
-          Trabalhamos com uma combinação refinada de conhecimento estratégico, 
-          habilidades práticas e análise detalhada. Identificamos os pontos que precisam 
-          de aprimoramento e aplicamos táticas comprovadas para garantir resultados sólidos. 
-          Nosso objetivo é sempre entregar uma experiência de evolução que seja não apenas 
-          eficiente, mas também enriquecedora, ajudando você a conquistar elos mais altos e uma gameplay mais refinada.
-          Com comprometimento e foco nos resultados, oferecemos uma jornada completa rumo ao 
-          topo do competitivo. Escolher nosso suporte significa confiar em quem já trilhou esse caminho, 
-          conhece os desafios e sabe exatamente como superá-los. A sua evolução será conduzida 
-          com profissionalismo, estratégia e excelência em cada etapa.</p>
-      </div>
-    </div>
-  </section>
-  <!-- Fim da Seção Sobre -->
 
   <!-- Seção de Serviços -->
   <section id="services">
@@ -136,119 +108,149 @@
 
   <!-- Seção de Projetos e Valores -->
   <section id="projects">
-    <div class="projects container">
+      <div class="projects container">
         <div class="projects-header">
             <h1 class="section-title">Projetos <span>& </span>Valores</h1>
-        </div>
-        <div class="all-projects">
-
-            <!-- Competitivo Especial -->
-            <div class="project-item">
-                <div class="project-info">
-                    <h1>COMPETITIVO ESPECIAL</h1>
-                    <h2>Preço por 1000 pontos</h2>
-                    <table class="pricing-table">
-                        <thead>
-                            <tr>
-                                <th>Nível</th>
-                                <th>Preço</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>0 ao 4,999</td>
-                                <td>R$35,00</td>
-                            </tr>
-                            <tr>
-                                <td>5,000 ao 9,999</td>
-                                <td>R$40,00</td>
-                            </tr>
-                            <tr>
-                                <td>10,000 ao 14,999</td>
-                                <td>R$50,00</td>
-                            </tr>
-                            <tr>
-                                <td>15,000 ao 19,999</td>
-                                <td>R$65,00</td>
-                            </tr>
-                            <tr>
-                                <td>20,000 ao 24,999</td>
-                                <td>R$90,00</td>
-                            </tr>
-                            <tr>
-                                <td>25,000 ao 29,999+</td>
-                                <td>Preço a combinar</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button class="btn open-modal" data-modal="competitivo">Calcular Valores</button>
-                </div>
-                <div class="project-img">
-                    <img src="./img/premier-bg-price.png" alt="img">
-                </div>
-            </div>
-
-            <!-- GamersClub -->
-            <div class="project-item">
-                <div class="project-info">
-                    <h1>GAMERSCLUB</h1>
-                    <h2>Preço por Level</h2>
-                    <table class="pricing-table">
-                        <thead>
-                            <tr>
-                                <th>Level</th>
-                                <th>Preço</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1 ao 10</td>
-                                <td>R$30,00</td>
-                            </tr>
-                            <tr>
-                                <td>10 ao 14</td>
-                                <td>R$50,00</td>
-                            </tr>
-                            <tr>
-                                <td>14 ao 17</td>
-                                <td>R$60,00</td>
-                            </tr>
-                            <tr>
-                                <td>17 ao 19</td>
-                                <td>R$80,00</td>
-                            </tr>
-                            <tr>
-                                <td>19 ao 20</td>
-                                <td>R$130,00</td>
-                            </tr>
-                            <tr>
-                                <td>20 ao 20 (3000 pontos)</td>
-                                <td>R$150,00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button class="btn open-modal" data-modal="gamersclub">Calcular Valores</button>
-                </div>
-                <div class="project-img">
-                    <img src="./img/gc-bg-price.png" alt="img">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Modal -->
-<div id="calculationModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Calcule os Valores</h2>
-
-        <div id="competitivo-section" class="calculation-section" style="display: none;">
-
-            <div class="level-selection">
-                <h4>Pontos Atuais:</h4>
-                <div class="levels" id="currentPoints">
-                    <img src="img/premier-levels/1k.png" data-points="1000" alt="1.000 Pontos">
+          </div>
+          <div class="all-projects">
+  
+              <!-- Competitivo Especial -->
+              <div class="project-item">
+                  <div class="project-info">
+                      <h1>COMPETITIVO ESPECIAL</h1>
+                      <h2>Preço por 1000 pontos</h2>
+                      <table class="pricing-table">
+                          <thead>
+                              <tr>
+                                  <th>Nível</th>
+                                  <th>Preço</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>0 ao 4,999</td>
+                                  <td>R$35,00</td>
+                              </tr>
+                              <tr>
+                                  <td>5,000 ao 9,999</td>
+                                  <td>R$40,00</td>
+                              </tr>
+                              <tr>
+                                  <td>10,000 ao 14,999</td>
+                                  <td>R$50,00</td>
+                              </tr>
+                              <tr>
+                                  <td>15,000 ao 19,999</td>
+                                  <td>R$65,00</td>
+                              </tr>
+                              <tr>
+                                  <td>20,000 ao 24,999</td>
+                                  <td>R$90,00</td>
+                              </tr>
+                              <tr>
+                                  <td>25,000 ao 29,999+</td>
+                                  <td>Preço a combinar</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <button class="btn open-modal" data-modal="competitivo">Calcular Valores</button>
+                  </div>
+                  <div class="project-img">
+                      <img src="./img/premier-bg-price.png" alt="img">
+                  </div>
+              </div>
+  
+              <!-- GamersClub -->
+              <div class="project-item">
+                  <div class="project-info">
+                      <h1>GAMERSCLUB</h1>
+                      <h2>Preço por Level</h2>
+                      <table class="pricing-table">
+                          <thead>
+                              <tr>
+                                  <th>Level</th>
+                                  <th>Preço</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>1 ao 10</td>
+                                  <td>R$30,00</td>
+                              </tr>
+                              <tr>
+                                  <td>10 ao 14</td>
+                                  <td>R$50,00</td>
+                              </tr>
+                              <tr>
+                                  <td>14 ao 17</td>
+                                  <td>R$60,00</td>
+                              </tr>
+                              <tr>
+                                  <td>17 ao 19</td>
+                                  <td>R$80,00</td>
+                              </tr>
+                              <tr>
+                                  <td>19 ao 20</td>
+                                  <td>R$130,00</td>
+                              </tr>
+                              <tr>
+                                  <td>20 ao 20 (3000 pontos)</td>
+                                  <td>R$150,00</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <button class="btn open-modal" data-modal="gamersclub">Calcular Valores</button>
+                  </div>
+                  <div class="project-img">
+                      <img src="./img/gc-bg-price.png" alt="img">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Modal -->
+  <div id="calculationModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Calcule os Valores</h2>
+  
+          <div id="competitivo-section" class="calculation-section" style="display: none;">
+  
+              <div class="level-selection">
+                  <h4>Pontos Atuais:</h4>
+                  <div class="levels" id="currentPoints">
+                      <img src="img/premier-levels/1k.png" data-points="1000" alt="1.000 Pontos">
+                      <img src="img/premier-levels/2k.png" data-points="2000" alt="2.000 Pontos">
+                      <img src="img/premier-levels/3k.png" data-points="3000" alt="3.000 Pontos">
+                      <img src="img/premier-levels/4k.png" data-points="4000" alt="4.000 Pontos">
+                      <img src="img/premier-levels/5k.png" data-points="5000" alt="5.000 Pontos">
+                      <img src="img/premier-levels/6k.png" data-points="6000" alt="6.000 Pontos">
+                      <img src="img/premier-levels/7k.png" data-points="7000" alt="7.000 Pontos">
+                      <img src="img/premier-levels/8k.png" data-points="8000" alt="8.000 Pontos">
+                      <img src="img/premier-levels/9k.png" data-points="9000" alt="9.000 Pontos">
+                      <img src="img/premier-levels/10k.png" data-points="10000" alt="10.000 Pontos">
+                      <img src="img/premier-levels/11k.png" data-points="11000" alt="11.000 Pontos">
+                      <img src="img/premier-levels/12k.png" data-points="12000" alt="12.000 Pontos">
+                      <img src="img/premier-levels/13k.png" data-points="13000" alt="13.000 Pontos">
+                      <img src="img/premier-levels/14k.png" data-points="14000" alt="14.000 Pontos">
+                      <img src="img/premier-levels/15k.png" data-points="15000" alt="15.000 Pontos">
+                      <img src="img/premier-levels/16k.png" data-points="16000" alt="16.000 Pontos">
+                      <img src="img/premier-levels/17k.png" data-points="17000" alt="17.000 Pontos">
+                      <img src="img/premier-levels/18k.png" data-points="18000" alt="18.000 Pontos">
+                      <img src="img/premier-levels/19k.png" data-points="19000" alt="19.000 Pontos">
+                      <img src="img/premier-levels/20k.png" data-points="20000" alt="20.000 Pontos">
+                      <img src="img/premier-levels/21k.png" data-points="21000" alt="21.000 Pontos">
+                      <img src="img/premier-levels/22k.png" data-points="22000" alt="22.000 Pontos">
+                      <img src="img/premier-levels/23k.png" data-points="23000" alt="23.000 Pontos">
+                      <img src="img/premier-levels/24k.png" data-points="24000" alt="24.000 Pontos">
+                      <img src="img/premier-levels/25k.png" data-points="25000" alt="25.000 Pontos">
+                  </div>
+              </div>
+  
+              <div class="level-selection">
+                  <h4>Pontos Desejados:</h4>
+                  <div class="levels" id="desiredPoints">
                     <img src="img/premier-levels/2k.png" data-points="2000" alt="2.000 Pontos">
                     <img src="img/premier-levels/3k.png" data-points="3000" alt="3.000 Pontos">
                     <img src="img/premier-levels/4k.png" data-points="4000" alt="4.000 Pontos">
@@ -273,102 +275,71 @@
                     <img src="img/premier-levels/23k.png" data-points="23000" alt="23.000 Pontos">
                     <img src="img/premier-levels/24k.png" data-points="24000" alt="24.000 Pontos">
                     <img src="img/premier-levels/25k.png" data-points="25000" alt="25.000 Pontos">
-                </div>
-            </div>
-
-            <div class="level-selection">
-                <h4>Pontos Desejados:</h4>
-                <div class="levels" id="desiredPoints">
-                  <img src="img/premier-levels/2k.png" data-points="2000" alt="2.000 Pontos">
-                  <img src="img/premier-levels/3k.png" data-points="3000" alt="3.000 Pontos">
-                  <img src="img/premier-levels/4k.png" data-points="4000" alt="4.000 Pontos">
-                  <img src="img/premier-levels/5k.png" data-points="5000" alt="5.000 Pontos">
-                  <img src="img/premier-levels/6k.png" data-points="6000" alt="6.000 Pontos">
-                  <img src="img/premier-levels/7k.png" data-points="7000" alt="7.000 Pontos">
-                  <img src="img/premier-levels/8k.png" data-points="8000" alt="8.000 Pontos">
-                  <img src="img/premier-levels/9k.png" data-points="9000" alt="9.000 Pontos">
-                  <img src="img/premier-levels/10k.png" data-points="10000" alt="10.000 Pontos">
-                  <img src="img/premier-levels/11k.png" data-points="11000" alt="11.000 Pontos">
-                  <img src="img/premier-levels/12k.png" data-points="12000" alt="12.000 Pontos">
-                  <img src="img/premier-levels/13k.png" data-points="13000" alt="13.000 Pontos">
-                  <img src="img/premier-levels/14k.png" data-points="14000" alt="14.000 Pontos">
-                  <img src="img/premier-levels/15k.png" data-points="15000" alt="15.000 Pontos">
-                  <img src="img/premier-levels/16k.png" data-points="16000" alt="16.000 Pontos">
-                  <img src="img/premier-levels/17k.png" data-points="17000" alt="17.000 Pontos">
-                  <img src="img/premier-levels/18k.png" data-points="18000" alt="18.000 Pontos">
-                  <img src="img/premier-levels/19k.png" data-points="19000" alt="19.000 Pontos">
-                  <img src="img/premier-levels/20k.png" data-points="20000" alt="20.000 Pontos">
-                  <img src="img/premier-levels/21k.png" data-points="21000" alt="21.000 Pontos">
-                  <img src="img/premier-levels/22k.png" data-points="22000" alt="22.000 Pontos">
-                  <img src="img/premier-levels/23k.png" data-points="23000" alt="23.000 Pontos">
-                  <img src="img/premier-levels/24k.png" data-points="24000" alt="24.000 Pontos">
-                  <img src="img/premier-levels/25k.png" data-points="25000" alt="25.000 Pontos">
-                  <img src="img/premier-levels/26k.png" data-points="26000" alt="26.000 Pontos">
-                </div>
-            </div>
-
-            <p id="resultCE"></p>
-            <a id="placeOrderCE" href="#" target="_blank" class="place-order-btn" style="display: none;">FAZER PEDIDO</a>
-        </div>
-
-        <div id="gamersclub-section" class="calculation-section" style="display: none;">
-
-            <div class="level-selection">
-                <h4>Nível Atual:</h4>
-                <div class="levels" id="currentLevels">
-                    <img src="img/gc-levels/lv1.png" data-level="1" alt="Level 1">
-                    <img src="img/gc-levels/lv2.png" data-level="2" alt="Level 2">
-                    <img src="img/gc-levels/lv3.png" data-level="3" alt="Level 3">
-                    <img src="img/gc-levels/lv4.png" data-level="4" alt="Level 4">
-                    <img src="img/gc-levels/lv5.png" data-level="5" alt="Level 5">
-                    <img src="img/gc-levels/lv6.png" data-level="6" alt="Level 6">
-                    <img src="img/gc-levels/lv7.png" data-level="7" alt="Level 7">
-                    <img src="img/gc-levels/lv8.png" data-level="8" alt="Level 8">
-                    <img src="img/gc-levels/lv9.png" data-level="9" alt="Level 9">
-                    <img src="img/gc-levels/lv10.png" data-level="10" alt="Level 10">
-                    <img src="img/gc-levels/lv11.png" data-level="11" alt="Level 11">
-                    <img src="img/gc-levels/lv12.png" data-level="12" alt="Level 12">
-                    <img src="img/gc-levels/lv13.png" data-level="13" alt="Level 13">
-                    <img src="img/gc-levels/lv14.png" data-level="14" alt="Level 14">
-                    <img src="img/gc-levels/lv15.png" data-level="15" alt="Level 15">
-                    <img src="img/gc-levels/lv16.png" data-level="16" alt="Level 16">
-                    <img src="img/gc-levels/lv17.png" data-level="17" alt="Level 17">
-                    <img src="img/gc-levels/lv18.png" data-level="18" alt="Level 18">
-                    <img src="img/gc-levels/lv19.png" data-level="19" alt="Level 19">
-                </div>
-            </div>
-
-            <div class="level-selection">
-                <h4>Nível Desejado:</h4>
-                <div class="levels" id="desiredLevels">
-                    <img src="img/gc-levels/lv2.png" data-level="2" alt="Level 2">
-                    <img src="img/gc-levels/lv3.png" data-level="3" alt="Level 3">
-                    <img src="img/gc-levels/lv4.png" data-level="4" alt="Level 4">
-                    <img src="img/gc-levels/lv5.png" data-level="5" alt="Level 5">
-                    <img src="img/gc-levels/lv6.png" data-level="6" alt="Level 6">
-                    <img src="img/gc-levels/lv7.png" data-level="7" alt="Level 7">
-                    <img src="img/gc-levels/lv8.png" data-level="8" alt="Level 8">
-                    <img src="img/gc-levels/lv9.png" data-level="9" alt="Level 9">
-                    <img src="img/gc-levels/lv10.png" data-level="10" alt="Level 10">
-                    <img src="img/gc-levels/lv11.png" data-level="11" alt="Level 11">
-                    <img src="img/gc-levels/lv12.png" data-level="12" alt="Level 12">
-                    <img src="img/gc-levels/lv13.png" data-level="13" alt="Level 13">
-                    <img src="img/gc-levels/lv14.png" data-level="14" alt="Level 14">
-                    <img src="img/gc-levels/lv15.png" data-level="15" alt="Level 15">
-                    <img src="img/gc-levels/lv16.png" data-level="16" alt="Level 16">
-                    <img src="img/gc-levels/lv17.png" data-level="17" alt="Level 17">
-                    <img src="img/gc-levels/lv18.png" data-level="18" alt="Level 18">
-                    <img src="img/gc-levels/lv19.png" data-level="19" alt="Level 19">
-                    <img src="img/gc-levels/lv20.png" data-level="20" alt="Level 20">
-                </div>
-                </div>
-            </div>
-
-            <p id="resultGC"></p>
-            <a id="placeOrderGC" href="#" target="_blank" class="place-order-btn" style="display: none;">FAZER PEDIDO</a>
-        </div>
-    </div>
-</div>
+                    <img src="img/premier-levels/26k.png" data-points="26000" alt="26.000 Pontos">
+                  </div>
+              </div>
+  
+              <p id="resultCE"></p>
+              <a id="placeOrderCE" href="#" target="_blank" class="place-order-btn" style="display: none;">FAZER PEDIDO</a>
+          </div>
+  
+          <div id="gamersclub-section" class="calculation-section" style="display: none;">
+  
+              <div class="level-selection">
+                  <h4>Nível Atual:</h4>
+                  <div class="levels" id="currentLevels">
+                      <img src="img/gc-levels/lv1.png" data-level="1" alt="Level 1">
+                      <img src="img/gc-levels/lv2.png" data-level="2" alt="Level 2">
+                      <img src="img/gc-levels/lv3.png" data-level="3" alt="Level 3">
+                      <img src="img/gc-levels/lv4.png" data-level="4" alt="Level 4">
+                      <img src="img/gc-levels/lv5.png" data-level="5" alt="Level 5">
+                      <img src="img/gc-levels/lv6.png" data-level="6" alt="Level 6">
+                      <img src="img/gc-levels/lv7.png" data-level="7" alt="Level 7">
+                      <img src="img/gc-levels/lv8.png" data-level="8" alt="Level 8">
+                      <img src="img/gc-levels/lv9.png" data-level="9" alt="Level 9">
+                      <img src="img/gc-levels/lv10.png" data-level="10" alt="Level 10">
+                      <img src="img/gc-levels/lv11.png" data-level="11" alt="Level 11">
+                      <img src="img/gc-levels/lv12.png" data-level="12" alt="Level 12">
+                      <img src="img/gc-levels/lv13.png" data-level="13" alt="Level 13">
+                      <img src="img/gc-levels/lv14.png" data-level="14" alt="Level 14">
+                      <img src="img/gc-levels/lv15.png" data-level="15" alt="Level 15">
+                      <img src="img/gc-levels/lv16.png" data-level="16" alt="Level 16">
+                      <img src="img/gc-levels/lv17.png" data-level="17" alt="Level 17">
+                      <img src="img/gc-levels/lv18.png" data-level="18" alt="Level 18">
+                      <img src="img/gc-levels/lv19.png" data-level="19" alt="Level 19">
+                  </div>
+              </div>
+  
+              <div class="level-selection">
+                  <h4>Nível Desejado:</h4>
+                  <div class="levels" id="desiredLevels">
+                      <img src="img/gc-levels/lv2.png" data-level="2" alt="Level 2">
+                      <img src="img/gc-levels/lv3.png" data-level="3" alt="Level 3">
+                      <img src="img/gc-levels/lv4.png" data-level="4" alt="Level 4">
+                      <img src="img/gc-levels/lv5.png" data-level="5" alt="Level 5">
+                      <img src="img/gc-levels/lv6.png" data-level="6" alt="Level 6">
+                      <img src="img/gc-levels/lv7.png" data-level="7" alt="Level 7">
+                      <img src="img/gc-levels/lv8.png" data-level="8" alt="Level 8">
+                      <img src="img/gc-levels/lv9.png" data-level="9" alt="Level 9">
+                      <img src="img/gc-levels/lv10.png" data-level="10" alt="Level 10">
+                      <img src="img/gc-levels/lv11.png" data-level="11" alt="Level 11">
+                      <img src="img/gc-levels/lv12.png" data-level="12" alt="Level 12">
+                      <img src="img/gc-levels/lv13.png" data-level="13" alt="Level 13">
+                      <img src="img/gc-levels/lv14.png" data-level="14" alt="Level 14">
+                      <img src="img/gc-levels/lv15.png" data-level="15" alt="Level 15">
+                      <img src="img/gc-levels/lv16.png" data-level="16" alt="Level 16">
+                      <img src="img/gc-levels/lv17.png" data-level="17" alt="Level 17">
+                      <img src="img/gc-levels/lv18.png" data-level="18" alt="Level 18">
+                      <img src="img/gc-levels/lv19.png" data-level="19" alt="Level 19">
+                      <img src="img/gc-levels/lv20.png" data-level="20" alt="Level 20">
+                  </div>
+                  </div>
+              </div>
+              <p id="resultGC"></p>
+              <a id="placeOrderGC" href="#" target="_blank" class="place-order-btn" style="display: none;">FAZER PEDIDO</a>
+          </div>
+      </div>
+  </div>
   <!-- Fim da Seção de Projetos e Preços -->
 
   <!-- Seção de Depoimentos -->
@@ -757,6 +728,39 @@
         Confie no ELOJOBCS2: onde o cliente está sempre em primeiro lugar.</h4>
   </section>
   <!-- Fim da Seção de Depoimentos -->
+
+  <!-- Seção Sobre -->
+  <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="./img/us-img.png" alt="img">
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">SOBRE <span>NÓS</span></h1>
+          <h2>Especialistas em Performance Competitiva de Counter-Strike 2</h2>
+          <p>Com uma sólida trajetória no cenário de Counter-Strike, reunimos 
+            anos de experiência competindo nos mais altos níveis. Nossa equipe é 
+            formada por jogadores com conta nível 21 na GamersClub, nível 10 na 
+            FACEIT e entre os Top 80 do Brasil. Além disso, contamos com contas que 
+            possuem 26 mil pontos no Competitivo Especial, marcos que refletem nosso 
+            desempenho consistente e dedicação ao jogo. Nossa trajetória inclui participações 
+            na Liga PRO e na exclusiva FPL (FACEIT Pro League), um ambiente reservado 
+            para os melhores profissionais do mundo. Nossa abordagem vai além do básico. 
+            Trabalhamos com uma combinação refinada de conhecimento estratégico, 
+            habilidades práticas e análise detalhada. Identificamos os pontos que precisam 
+            de aprimoramento e aplicamos táticas comprovadas para garantir resultados sólidos. 
+            Nosso objetivo é sempre entregar uma experiência de evolução que seja não apenas 
+            eficiente, mas também enriquecedora, ajudando você a conquistar elos mais altos e uma gameplay mais refinada.
+            Com comprometimento e foco nos resultados, oferecemos uma jornada completa rumo ao 
+            topo do competitivo. Escolher nosso suporte significa confiar em quem já trilhou esse caminho, 
+            conhece os desafios e sabe exatamente como superá-los. A sua evolução será conduzida 
+            com profissionalismo, estratégia e excelência em cada etapa.</p>
+        </div>
+      </div>
+  </section>
+  <!-- Fim da Seção Sobre -->
 
   <!-- Seção de Contato (Desativada)
   <section id="contact">
