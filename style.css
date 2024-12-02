@@ -764,7 +764,7 @@ p {
         padding: 10px 20px;
         font-size: 1.2rem;
     }
-	
+
 	.modal .close {
         top: 10px;
         right: 10px;
@@ -1032,6 +1032,32 @@ p {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
+.floating-whatsapp {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-whatsapp img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
 
 /* Fim do Rodapé */
 
