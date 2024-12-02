@@ -629,40 +629,42 @@ p {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     overflow-y: auto;
+    padding-top: 15px;
 }
 
 .modal-content {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     color: white;
-    width: 90%;
-    max-width: 800px;
-    padding: 30px 40px;
+    width: 85%;
+    max-width: 700px;
+    padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     position: relative;
+    margin: auto;
 }
 
 .modal .close {
     position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 2.2rem;
+    top: 10px;
+    right: 15px;
+    font-size: 1.8rem;
     font-weight: bold;
     color: crimson;
     cursor: pointer;
     border: 2px solid crimson;
     border-radius: 50%;
     background-color: transparent;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
-	z-index: 1001;
+    z-index: 1001;
 }
 
 .modal .close:hover {
@@ -672,101 +674,67 @@ p {
 }
 
 .modal-content h2 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .modal-content h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: crimson;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .modal-content h4 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .modal-content label {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #e0e0e0;
     display: block;
-    margin: 15px 0 10px;
+    margin: 10px 0 8px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .modal-content p {
-    font-size: 1.6rem;
-    margin-top: 25px;
+    font-size: 1.4rem;
+    margin-top: 20px;
     color: #e0e0e0;
-    line-height: 1.6;
+    line-height: 1.5;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .modal-content p#resultGC, 
 .modal-content p#resultCE {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    margin-top: 30px;
-}
-
-.modal-content input {
-    width: 100%;
-    padding: 12px 15px;
-    font-size: 1.2rem;
-    color: #29323c;
-    border: 1px solid #485563;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    background-color: #e0e0e0;
-    outline: none;
-    transition: border 0.3s ease;
-}
-
-.modal-content input:focus {
-    border-color: crimson;
-}
-
-.modal-content button {
-    background-color: crimson;
-    color: white;
-    padding: 12px 25px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.modal-content button:hover {
-    background-color: #ff6666;
-    transform: scale(1.05);
+    margin-top: 25px;
 }
 
 .levels {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 15px;
     justify-content: center;
-    margin: 30px auto;
+    margin: 20px auto;
     max-width: 100%;
 }
 
 .levels img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     border: 2px solid transparent;
     border-radius: 8px;
@@ -787,15 +755,15 @@ p {
     display: inline-block;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
-    padding: 10px 25px;
+    padding: 8px 20px;
     border: 2px solid crimson;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 15px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -811,13 +779,22 @@ p {
 }
 
 @media (max-width: 768px) {
+    .modal .close {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 1.6rem;
+        width: 25px;
+        height: 25px;
+    }
+
     .modal-content {
-        max-width: 95%;
-        padding: 20px;
+        max-width: 90%;
+        padding: 15px;
     }
 
     .modal-content h2, .modal-content h3, .modal-content h4 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .levels {
@@ -826,26 +803,18 @@ p {
     }
 
     .levels img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
     .modal-content button {
-        padding: 10px 20px;
-        font-size: 1.2rem;
-    }
-
-	.modal .close {
-        top: 10px;
-        right: 10px;
-        font-size: 1.8rem;
-        width: 35px;
-        height: 35px;
+        padding: 8px 15px;
+        font-size: 1rem;
     }
 
     .modal-content p#resultGC, 
     .modal-content p#resultCE {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 /* Fim da Seção de Pagamentos */
