@@ -101,6 +101,7 @@ function calculateCE() {
         { max: 14999, price: 50 },
         { max: 19999, price: 65 },
         { max: 24999, price: 90 },
+		{ max: 25000, price: 120 },
     ];
 
     let totalPrice = 0;
@@ -109,7 +110,10 @@ function calculateCE() {
         totalPrice += range ? range.price : 0;
     }
 
-    document.getElementById("resultCE").textContent = `Valor total: R$${totalPrice.toFixed(2)}`;
+    document.getElementById("resultCE").textContent = `Valor total: R$${totalPrice.toLocaleString("pt-BR", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+    })}`;
 }
 
 function calculateGC() {
@@ -128,7 +132,10 @@ function calculateGC() {
         else totalPrice += 130;
     }
 
-    document.getElementById("resultGC").textContent = `Valor total: R$${totalPrice.toFixed(2)}`;
+    document.getElementById("resultGC").textContent = `Valor total: R$${totalPrice.toLocaleString("pt-BR", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+    })}`;
 }
 
 function resetModal() {
