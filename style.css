@@ -7,36 +7,52 @@
 
 /* Preloader */
 #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #29323c; /* Cor de fundo */
-    z-index: 10000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#preloader .spinner {
-    border: 5px solid rgba(255, 255, 255, 0.3);
-    border-top: 5px solid crimson;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+  }
+  
+  .spinner {
+	position: relative;
+	width: 100px;
+	height: 100px;
+  }
+  
+  .spinner-logo {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+  }
+  
+  .spinner-ring {
+	width: 100%;
+	height: 100%;
+	border: 4px solid rgba(255, 255, 255, 0.2);
+	border-top: 4px solid crimson;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  
 body {
     margin: 0;
     height: 100vh;

@@ -1,10 +1,24 @@
-window.addEventListener('load', () => {
-const preloader = document.getElementById('preloader');
-const mainContent = document.getElementById('main-content');
+document.addEventListener('DOMContentLoaded', () => {
+    const preloader = document.getElementById('preloader');
+    const minLoadingTime = 2000;
 
-preloader.style.display = 'none';
-mainContent.style.display = 'block';
-});
+    const startTime = performance.now();
+
+    window.addEventListener('load', () => {
+      const elapsedTime = performance.now() - startTime;
+      const remainingTime = Math.max(0, minLoadingTime - elapsedTime);
+
+      setTimeout(() => {
+        // Inicia a transição de saída
+        preloader.style.opacity = 0;
+        preloader.style.transition = 'opacity 0.5s ease';
+
+        setTimeout(() => {
+          preloader.style.display = 'none';
+        }, 500);
+      }, remainingTime);
+    });
+  });
 
 
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
@@ -212,3 +226,25 @@ window.addEventListener("click", (e) => {
         resetModal();
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const preloader = document.getElementById('preloader');
+    const minLoadingTime = 2000;
+
+    const startTime = performance.now();
+
+    window.addEventListener('load', () => {
+      const elapsedTime = performance.now() - startTime;
+      const remainingTime = Math.max(0, minLoadingTime - elapsedTime);
+
+      setTimeout(() => {
+        // Inicia a transição de saída
+        preloader.style.opacity = 0;
+        preloader.style.transition = 'opacity 0.5s ease';
+
+        setTimeout(() => {
+          preloader.style.display = 'none';
+        }, 500);
+      }, remainingTime);
+    });
+  });
